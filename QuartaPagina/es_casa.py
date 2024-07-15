@@ -52,7 +52,7 @@ pag13= """   </div>
 """
 
 N=12
-with open ("pippo.html", "w") as index:
+with open ("es_casa.html", "w") as index:
     index.write(f"{pag11}")
     for i in range(N):
         index.write(f"{pag12}")
