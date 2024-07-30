@@ -8,10 +8,28 @@ Esercizo di base che stampa a schermo la stringa di testo "ciao".
 La funzione console.log, prende come input una stringa (nell'esempio
 la stringa "ciao" e produce una stampa a schermo della stessa.)
  */
-/*
+
 console.log("ciao");
-process.exit(0);
+const prompt = require ('prompt-sync')();
+/*
+var A = 10
+var B = 20
+Prova();
+console.log("il Valore di A è " + A);
+var response = prompt("Vuoi inserire un numero si/no?")
+if (response == "si")
+{
+
+    B = prompt("inserisci il numero: ");
+}
+sTipo = typeof(B)
+console.log("il tipo di B è " + sTipo)
+vParola = "buonasera"
+for(i=0;i<vParola.length;i++)
+    console.log("La lettera " + i + " della parola é" + vParola[i])
+    process.exit(0);
 */
+
 /*
 Per usare il prompt:
 
@@ -26,7 +44,7 @@ const str = prompt('Enter a string: ');
 console.log("Hai inserito " + str);
 process.exit(0);
 */
-
+/*
 const prompt = require('prompt-sync')();
 var a;
 var b;
@@ -35,7 +53,7 @@ b = prompt("Inserisci secondo numero:")
 c = a + b
 console.log("La somma vale " + c) 
 process.exit(0);
-
+*/
 /*
 var a;
 var b;
@@ -47,7 +65,7 @@ c = a1 + b1
 console.log("La somma vale " + c) 
 */
 
-
+/*
 a = prompt("Inserisci primo numero:")
 b = prompt("Inserisci secondo numero:")
 c = prompt("Inserisci operatore:")
@@ -59,6 +77,18 @@ if(c=="-")
 	d = a1 - b1
 
 console.log("Risultato " + d) 
+*/
+
+parola= prompt ("inserisci una stringa: ")
+
+for (i=0;i<parola.length;i++)
+{
+    if (parola[i] != "a" && parola[i] != "e" && parola[i] != "i" && parola[i] != "o" && parola[i] != "u")
+        console.log("la lettera " + parola[i] + " è una consonante")
+
+    else
+        console.log("la lettera " + parola[i] + " è una vocale")
+}
 
 
 
